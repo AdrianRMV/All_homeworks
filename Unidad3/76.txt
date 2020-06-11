@@ -1,0 +1,32 @@
+//Numero de trabajadores
+
+    int numeroT,x=0,horasT=0,sueldoH,sueldo=0,sueldoD=0;
+
+
+    cout<<"Ingrese el numero de trabajadores: "; cin>>numeroT;
+
+    while (x < numeroT){
+        cout<<"Horas trabajadas? "; cin>>horasT;
+        cout<<"Sueldo por hora: "; cin>>sueldo;
+        sueldoH= horasT * sueldo;
+        if (sueldoH <=150){
+            cout<<"Descuento aplicado;  5%"<<endl;
+            sueldoD = sueldoH - (sueldoH*0.05);
+            cout<<"Total del sueldo semanal: "<<sueldoD<<endl;
+
+        }
+        if (sueldoH >300 and sueldo < 450){
+            cout<<"Descuento aplicado;  9%"<<endl;
+            sueldoD = sueldoH - (sueldoH*0.09);
+            cout<<"Total del sueldo semanal: "<<sueldoD<<endl;
+
+        }
+        if (sueldoH >150 and sueldo <300){
+            cout<<"Descuento aplicado;  7%"<<endl;
+            sueldoD = sueldoH - (sueldoH*0.07);
+            cout<<"Total del sueldo semanal: "<<sueldoD<<endl;
+
+        }
+    }
+}
+

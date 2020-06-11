@@ -1,0 +1,97 @@
+	
+int suma (int x, int y)
+{
+    int suma= 0;
+
+    suma = x + y;
+
+    return suma;
+
+}
+
+
+int resta (int x, int y)
+{
+    int resta= 0;
+
+    resta = x - y;
+
+    return resta;
+
+
+}
+
+int multi (int x, int y)
+{
+    int multi= 0;
+
+    multi = x * y;
+
+    return multi;
+
+
+}
+
+int division (int x, int y)
+{
+
+    int division= 0;
+
+    division = x / y;
+
+    return division;
+
+}
+
+int main(){
+
+    int variable1 = 0;
+    int variable2 = 0;
+    int operacion;
+    cout << "Que operacion desea hacer?: ";
+    cout << " 1.- Suma  2.- resta  3.- multiplicacion  4.- division: ";
+    cin >> operacion;
+
+    if (operacion == 1){
+
+        cout<<"Usted eligio la opcion de : SUMA "<<endl;
+        cout<<"Ingrese su primer numero por favor: "; cin>>variable1;
+        cout<<"Ingrese su segundo numero por favor: "; cin>>variable2;
+        int res = suma (variable1 , variable2);
+        cout << "El resultado de su suma es: "<<res<<endl;
+
+    }
+
+    if (operacion == 2){
+
+        cout<<"Usted eligio la opcion de : RESTA "<<endl;
+        cout<<"Ingrese su primer numero por favor: "; cin>>variable1;
+        cout<<"Ingrese su segundo numero por favor: "; cin>>variable2;
+        int res = resta (variable1 , variable2);
+        cout << "El resultado de su resta es: "<<res<<endl;
+
+    }
+
+    if (operacion == 3){
+
+        cout<<"Usted eligio la opcion de : MULTIPLICACION "<<endl;
+        cout<<"Ingrese su primer numero por favor: "; cin>>variable1;
+        cout<<"Ingrese su segundo numero por favor: "; cin>>variable2;
+        int res = multi (variable1 , variable2);
+        cout << "El resultado de su multiplicacion es: "<<res<<endl;
+
+    }
+
+    if (operacion == 4){
+
+        cout<<"Usted eligio la opcion de : DIVISION "<<endl;
+        cout<<"Ingrese su primer numero por favor: "; cin>>variable1;
+        cout<<"Ingrese su segundo numero por favor: "; cin>>variable2;
+        int res = division (variable1 , variable2);
+        cout << "El resultado de su division es: "<<res<<endl;
+
+    }
+
+
+    return 0;
+}

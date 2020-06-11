@@ -1,0 +1,30 @@
+ 	
+int aux=0, j=49;
+
+    int pares[50]={0};
+
+
+
+    for(int i=0; i<=100; i++){
+
+        if(i%2!=0){
+
+            pares[aux] = i;
+
+            aux++;
+
+        }
+
+    }
+
+
+
+    while(j>=0){
+
+        cout<<"["<<pares[j]<<"], ";
+
+        j--;
+
+    }
+
+}

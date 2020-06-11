@@ -1,0 +1,38 @@
+int matz[5][5];
+    int pares = 0, impares = 0;
+    int var;
+
+    srand(time(NULL));
+
+    for (int i = 0; i < 5 ; ++i) {
+        for (int j = 0; j < 5 ; ++j) {
+            var = rand() % 9+1;
+            matz[i][j] = var;
+        }
+    }
+
+    for (int i = 0; i < 5 ; ++i) {
+        for (int j = 0; j < 5 ; ++j) {
+            if(matz[i][j] % 2 == 0){
+                pares += 1;
+            }else{
+                impares += 1;
+            }
+        }
+    }
+
+    for (int i = 0; i < 5 ; ++i) {
+        for (int j = 0; j < 5 ; ++j) {
+            cout<<"["<<matz[i][j]<<"]";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl;
+
+    cout<<"cantidad de pares: "<<pares<<endl;
+    cout<<"cantidad de impares: "<<impares;
+}
+
+
+

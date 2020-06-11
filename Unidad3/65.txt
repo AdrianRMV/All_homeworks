@@ -1,0 +1,11 @@
+//salario
+
+    int salario =1500,total,salario2;
+
+    for (int i = 0; i < 6 ; ++i) {
+        salario2 = salario * 12;
+        cout<<"El salario del año es de: "<<salario2<<endl;
+        salario += (salario * .10);
+    }
+    cout<<"el salario pasando los 6 años es de; ";salario;
+}

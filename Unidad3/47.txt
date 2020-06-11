@@ -1,0 +1,43 @@
+//Banco
+    float saldoA,montoC,ultimo,total,minimo,intereses,saldoActual;
+
+    cout<<"Ingrese el saldo de su anterior tarjeta: "; cin>>saldoA;
+    cout<<"Ingrese el monto de sus compras: "; cin>>montoC;
+    cout<<"A cuanto equivale el ultimo pago que hizo: "; cin>>ultimo;
+
+    saldoActual = (saldoA + montoC) - ultimo;
+    minimo = saldoActual * 0.15;
+    intereses = saldoActual * 0.85;
+
+    if (ultimo < (saldoA*0.15)){
+        saldoActual = saldoActual + (saldoActual*0.12);
+        saldoActual = saldoActual + 200;
+        minimo = saldoActual * 0.15;
+        intereses = saldoActual * 0.85;
+        cout<<"Su saldo actual es de: "<<saldoActual<<endl;
+        cout<<"Pago minimo: "<<minimo<<endl;
+        cout<<"Pago para no generar intereses: "<<intereses;
+
+
+
+    }
+    else{
+        cout<<"Su saldo actual es de: "<<saldoActual<<endl;
+        cout<<"Pago minimo: "<<minimo<<endl;
+        cout<<"Pago para no generar intereses: "<<intereses;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

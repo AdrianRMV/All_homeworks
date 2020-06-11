@@ -1,0 +1,14 @@
+//año 1961
+
+    float annioA=0,annioI=1961,terreno=1500;
+    cout<<"Ingrese año acutal: "; cin>>annioA;
+
+    while (annioI < annioA){
+
+        terreno= terreno +(terreno *0.15);
+        cout<<"La inversion del año "<<annioI<<"Es de: "<<terreno<<endl;
+        annioI +=1;
+    }
+
+
+}

@@ -1,0 +1,18 @@
+//Trajes
+
+    float descuento,costo;
+
+    cout<<"Ingrese el costo del traje a comprar: "; cin>>costo;
+    if ( costo > 2500){
+        descuento = costo * 0.15;
+        costo -= descuento;
+        cout<<"El costo final es de: "<<costo<<endl;
+        cout<<"El descuento fue de: "<<descuento;
+    }
+    if (costo < 2500){
+        descuento = costo * 0.08;
+        costo = costo - descuento;
+        cout<<"El total a pagar es de: "<<costo<<endl;
+        cout<<"El descuento fue de: "<<descuento;
+    }
+}

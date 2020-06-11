@@ -1,0 +1,8 @@
+//Galones de leche a precio por litros
+float galones,litros,total;
+
+cout<<"Ingrese la cantidad de galones de leche que desee llevar: "; cin>>galones;
+
+litros = (10*3.783)*galones;
+
+cout<<"El total a pagar es de: $"<<litros<<" Pesos Mxn";

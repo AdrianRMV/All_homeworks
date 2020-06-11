@@ -1,0 +1,7 @@
+//Dinero que ahorra anualmente
+float dinero,porciento;
+
+cout<<"Cuanto gana semanalmente?: "; cin>>dinero;
+dinero = dinero * 0.15;
+dinero = dinero * 48;
+cout<<"Su ahorro anual es de: "<<dinero;

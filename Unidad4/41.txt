@@ -1,0 +1,24 @@
+ char palabra1[100];
+    char palabra2[100];
+    char palabraC [100];
+    int tamaño1 = strlen(palabra1);
+    int tamaño2 = strlen(palabra2);
+
+    cout<<"Ingrese su primera palabra: "; cin>>palabra1;
+    cout<<"Ingrese su segunda palabra: "; cin>>palabra2;
+
+
+
+    for (int i = 0; i < tamaño1; ++i) {
+        palabraC[i]=palabra1[i];
+    }
+
+    for (int i = 0; i < tamaño2; ++i) {
+        palabraC[i]=palabra2[i];
+    }
+
+    cout<<palabraC;
+
+
+
+}

@@ -1,0 +1,23 @@
+ //Costo CONAGUA
+
+    int edad,metrosc,costmetros,desc,total,total1;
+
+    cout<<"¿Cuántos metros cúbicos de agua gasto? ";cin>>metrosc;
+    cout<<"¿Cuál es el costo por metro cúbico? "; cin>>costmetros;
+    cout<<"¿Cuál es la edad del usuario? "; cin>>edad;
+
+    if (edad > 60){
+        total = metrosc*costmetros;
+        total1 = metrosc*costmetros;
+        desc = total * 0.30;
+        total -= desc;
+        cout<<"El costo que debera pagar es de: $"<<total1<<", Pero se le aplica un descuento por su edad y queda en: $"<<total;
+
+
+    }
+    else{
+        total = metrosc*costmetros;
+        cout<<"El costo que debera pagar es de: $"<<total;
+    }
+
+}

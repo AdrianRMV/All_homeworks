@@ -1,0 +1,34 @@
+//Ejercicio horas vividas
+
+    int annio,dias,semanas,horas,meses,mes,dia;
+
+    cout<<"Ingrese el año en el que nacio: "; cin>>annio;
+    cout<<"Ingrese su mes de nacimiento: "; cin>>mes;
+    cout<<"Ingrese su dia de nacimiento: "; cin>>dia;
+
+    if (mes > 2 ){
+        annio = (2020-annio)-1;
+        meses = (annio * 12)+mes;
+        semanas = meses * 4;
+        dias = semanas * 7;
+        horas = dias * 24;
+        cout<<"Años de vida: "<<annio<<endl;
+        cout<<"Meses de vida: "<<meses<<endl;
+        cout<<"Semanas de vida: "<<semanas<<endl;
+        cout<<"Dias de vida: "<<dias<<endl;
+        cout<<"Horas de vida: "<<horas<<endl;
+
+    }
+    if (mes == 2 and dia <= 24){
+        annio = (2020-annio);
+        meses = (annio * 12)+mes;
+        semanas = meses * 4;
+        dias = semanas * 7;
+        horas = dias * 24;
+        cout<<"Años de vida: "<<annio<<endl;
+        cout<<"Meses de vida: "<<meses<<endl;
+        cout<<"Semanas de vida: "<<semanas<<endl;
+        cout<<"Dias de vida: "<<dias<<endl;
+        cout<<"Horas de vida: "<<horas<<endl;
+    }
+}

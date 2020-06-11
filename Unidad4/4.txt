@@ -1,0 +1,19 @@
+ //arreglo para pares
+
+    int arreglo [50]= {0};
+    int auxiliar=0;
+    int i=1;
+
+    while(i<101){
+        if (i%2 == 0){
+            arreglo[auxiliar] = i;
+            auxiliar++;
+
+        }
+        i++;
+    }
+
+    for (int j = 0; j < 50; ++j) {
+        cout<<" ["<<arreglo[j]<<"] ";
+    }
+}

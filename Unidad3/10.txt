@@ -1,0 +1,9 @@
+	
+//Metros cubicos.
+float metros,dia,costo,precio;
+
+cout<<"Cuantos metros cubicos requiere? "; cin>>metros;
+cout<<"Que dia de la semana es: 1.- Lunes  2.- Martes  3.-Miercoles  4.-Jueves  5.-Viernes  6.-Sabado  7.-Domingo "; cin>>dia;
+cout<<"Cual es el costo? "; cin>>costo;
+precio = metros * costo;
+cout<<"El costo a pagar es de: $"<<precio;

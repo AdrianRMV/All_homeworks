@@ -1,0 +1,59 @@
+    int matriz1 [100][100];
+    int matriz2 [100][100];
+    int matriz3 [100][100] = {0};
+    int fila1,col1,fila2,col2;
+    srand (time(NULL));
+
+
+    cout<<"Cuantas filas tendra su primera matriz: "; cin>>fila1;
+    cout<<"Cuantas columnas tendra su primera matriz: "; cin>>col1;
+
+    //rellenar primera matriz numeros random
+    for (int i = 0; i < fila1; ++i) {
+        for (int j = 0; j < col1; ++j) {
+            matriz1[i][j]=rand()%10;
+        }
+        cout<<endl;
+    }
+    //mostrar la matriz 1
+    for (int i = 0; i < fila1; ++i) {
+        for (int j = 0; j < col1; ++j) {
+            cout<<"[ "<<matriz1[i][j]<<" ]";
+        }
+        cout<<endl;
+    }
+
+    cout<<"Cuantas filas tendra su primera matriz: "; cin>>fila2;
+    cout<<"Cuantas columnas tendra su primera matriz: "; cin>>col2;
+
+    //rellenar la matriz 2 de numero random
+    for (int i = 0; i < fila2; ++i) {
+        for (int j = 0; j < col2; ++j) {
+            matriz2[i][j]=rand()%10;
+        }
+        cout<<endl;
+    }
+    //mostrar la matriz 2
+    for (int i = 0; i < fila2; ++i) {
+        for (int j = 0; j < col2; ++j) {
+            cout<<"[ "<<matriz2[i][j]<<" ]";
+        }
+        cout<<endl;
+    }
+    //sumar matriz 1 con la matriz 2 y meterla en la matriz 3
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            matriz3[i][j]= (matriz2[i][j]- matriz1[i][j]);
+        }
+        cout<<endl;
+
+    }
+    //mostrar la matriz 3, o sea la suma de matrices 1 y 2
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout<<"[ "<<matriz3[i][j]<<" ]";
+        }
+        cout<<endl;
+    }
+}
+

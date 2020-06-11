@@ -1,0 +1,14 @@
+//VOCALES
+char vocales[10];
+int numeroV=0,total=0;
+char vocales2[10];
+char aux;
+for (int i = 0; i < 10; ++i) {
+    cout<<"Ingrese letra: "; cin>>vocales[i];
+}
+for (int i = 0; i < 10; ++i) {
+    if (vocales[i] == 'a' or vocales[i] == 'e' or vocales[i] == 'i' or vocales[i] == 'o' or vocales[i] == 'u'){
+        cout<<vocales[i]<<",";
+    }
+
+}

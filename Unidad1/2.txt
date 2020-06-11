@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main (){
+   
+    string nombre;
+   
+    cout<< "Cual es su nombre?";
+    cin>>nombre;
+    cout<< "!Bienvenido usuario " << nombre << "!" <<endl;
+   
+   
+   
+   
+   
+   
+    return 0;
+}

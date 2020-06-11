@@ -1,0 +1,34 @@
+//autos
+
+    int aut,clave,numeroA=0,x=0,impuesto=0,impuesto1=0,impuesto2=0,impuesto3=0;
+
+    cout<<"Numero de autos: "; cin>>numeroA;
+
+    while (x < numeroA){
+        cout<<"Valor del auto: "; cin>>aut;
+        cout<<"Clave del auto: 1  2  3"; cin>>clave;
+        if (clave == 1){
+            impuesto = aut + (aut*0.10);
+            cout<<"Impuesto: "<<impuesto<<endl;
+            impuesto1+=impuesto;
+        }
+        if (clave == 2){
+            impuesto = aut + (aut*0.07);
+            cout<<"Impuesto: "<<impuesto<<endl;
+            impuesto2+=impuesto;
+
+        }
+        if (clave == 3){
+            impuesto = aut + (aut*0.05);
+            cout<<"Impuesto: "<<impuesto<<endl;
+            impuesto3=impuesto;
+
+        }
+        x+=1;
+
+    }
+    cout<<"El total del auto con clave 1 es de "<<impuesto1<<endl;
+    cout<<"El total del auto con clave 2 es de "<<impuesto2<<endl;
+    cout<<"El total del auto con clave 3 es de "<<impuesto3<<endl;
+
+}

@@ -1,0 +1,25 @@
+ //ESTACIONAMIENTO
+
+    float horas,tarifa,total,horasd;
+    cout<<"Cuantas horas estuvo? "; cin>>horas;
+    cout<<"De cuanto es la tarifa: "; cin>>tarifa;
+
+    if (horas > 8){
+        total = horas*tarifa;
+        horasd = horas - 4;
+        horasd=(tarifa*4)*0.10;
+        total -= horasd;
+        cout<<"El total es de: $"<<total;
+
+
+
+
+    }
+    else{
+        total = horas*tarifa;
+        cout<<"El total a pagar es de: $"<<total;
+
+
+    }
+}
+

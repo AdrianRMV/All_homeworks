@@ -1,0 +1,19 @@
+int velocidad, v1=70, v2=150;
+
+cout<<"A que velocidad avanza?: ";
+
+cin>>velocidad;
+
+while(v1!=v2){
+
+v1+=velocidad;
+
+v2-=velocidad;
+
+if(v1==v2){
+
+cout<<"Los vehiculos se encontraron: "<<v1;
+
+}
+
+}

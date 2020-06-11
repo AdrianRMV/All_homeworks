@@ -1,0 +1,409 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+void welcome ();
+
+void juego ();
+
+
+
+//Variables globales
+
+int filas,col;
+
+char tablero [3][3]={' '};
+
+char turno = 'x';
+
+bool game = true;
+
+int ganador =1;
+
+int oportunidades =0;
+
+
+
+int main(){
+
+	
+
+	/*
+
+	[x] [o] [x]
+
+	[o] [x] [o]  ESPECTATIVA DE MATRIZ PARA EL JUEGO
+
+	[o] [o] [x]
+
+	*/
+
+	
+
+	welcome ();
+
+	juego ();
+
+	
+
+	return 0;
+
+}
+
+
+
+
+
+void welcome(){
+
+	
+
+	cout << "===BIENVENIDO A TIC TAC TOC ==="<<endl;
+
+	cout << "Este juego esta disenado para DOS jugadores solamente"<<endl<<endl;
+
+	
+
+}
+
+void juego (){
+
+	int filas,col;
+
+	char tablero [3][3]={' '};
+
+	char turno = 'x';
+
+	bool game = true;
+
+	int ganador =1;
+
+	int oportunidades =0;
+
+	
+
+	if (oportunidades < 9){
+
+
+
+		while (game == true){
+
+		
+
+			// TABLERO
+
+			for (int i=0; i<3; i++){
+
+				for (int j=0; j<3; j++){
+
+					
+
+					cout << "[ "<<tablero[i][j]<<" ]";
+
+				}
+
+				cout<<endl;
+
+				
+
+			}	
+
+			
+
+			cout << "Ingrese la fila por favor: "; cin>>filas; cout << endl;
+
+			cout << "Ingrese la columna por favor: "; cin >> col; cout << endl;	
+
+			
+
+			//Comprobar que las filas y columnas esten en coordenadas correctas
+
+			if (filas > 2 or  col > 2 or filas <0 or col < 0 ){
+
+				
+
+				cout << "Ingresa coordenadas validas por favor!!"<<endl;
+
+				cout << "Ingrese la fila por favor: "; cin>>filas; cout << endl;
+
+				cout << "Ingrese la columna por favor: "; cin >> col; cout << endl;
+
+			}
+
+			
+
+			//Comprobar que la coordenada que ingreso el usuario no este ocupada ya
+
+			
+
+			if (tablero [filas][col]=='x' or  tablero [filas][col]=='o'){
+
+				
+
+				cout << "Esta casilla ya esta ocupada, prueba con otra!!"<<endl;
+
+				cout << "Ingrese la fila por favor: "; cin>>filas; cout << endl;
+
+				cout << "Ingrese la columna por favor: "; cin >> col; cout << endl;
+
+			}
+
+			
+
+			//Se insertara el turno del jugador en el tablero
+
+			tablero[filas][col]=turno;
+
+			//======= COLUMNAS =============
+
+			//comprobar que X gano el juego
+
+			if (tablero [0][0]=='x' and
+
+				tablero [0][1]=='x' and
+
+				tablero [0][2]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}
+
+			if (tablero [1][0]=='x' and
+
+				tablero [1][1]=='x' and
+
+				tablero [1][2]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}
+
+			if (tablero [2][0]=='x' and
+
+				tablero [2][1]=='x' and
+
+				tablero [2][2]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}
+
+		//=================================================================================
+
+		//======================= FILAS ===================================================
+
+			if (tablero [0][0]=='x' and
+
+				tablero [1][0]=='x' and
+
+				tablero [2][0]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}
+
+			if (tablero [0][1]=='x' and
+
+				tablero [1][1]=='x' and
+
+				tablero [2][1]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}
+
+			if (tablero [0][2]=='x' and
+
+				tablero [1][2]=='x' and
+
+				tablero [2][2]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: x ==="<<endl;
+
+				}	
+
+		//================ CRUZADO ===========================================
+
+			if (tablero [0][0]=='x' and
+
+				tablero [1][1]=='x' and
+
+				tablero [2][2]=='x'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: X ==="<<endl;
+
+				}		
+
+		//====================================================================
+
+		//COMPROBANDO QUE EL JUGADOR 'O' HAYA GANADO 
+
+		//======================COLUMNAS======================================
+
+			if (tablero [0][0]=='o' and
+
+				tablero [0][1]=='o' and
+
+				tablero [0][2]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+			if (tablero [1][0]=='o' and
+
+				tablero [1][1]=='o' and
+
+				tablero [1][2]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+			if (tablero [2][0]=='o' and
+
+				tablero [2][1]=='o' and
+
+				tablero [2][2]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+		//=================================================================================
+
+		//======================= FILAS ===================================================
+
+			if (tablero [0][0]=='o' and
+
+				tablero [1][0]=='o' and
+
+				tablero [2][0]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+			if (tablero [0][1]=='o' and
+
+				tablero [1][1]=='o' and
+
+				tablero [2][1]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+			if (tablero [0][2]=='o' and
+
+				tablero [1][2]=='o' and
+
+				tablero [2][2]=='o'){
+
+					game = false;
+
+					cout << "===Gano el jugador de: o ==="<<endl;
+
+				}
+
+		
+
+		//=================================================================================
+
+		//================== CRUZADO ======================================================
+
+			if (tablero [0][0]=='o' and
+
+				tablero [1][1]=='o' and
+
+				tablero [2][2]=='o'){
+
+						game = false;
+
+						cout << "===Gano el jugador de: y ==="<<endl;
+
+				}
+
+			
+
+			
+
+		
+
+			//cambiar turnos de jugadores
+
+			if (turno =='x'){
+
+				turno = 'o';
+
+			}else{
+
+				turno='x';
+
+			}
+
+			
+
+			//El numero de oportunidades creece entre cada ronda
+
+		oportunidades += 1;
+
+			
+
+		if (oportunidades == 9){
+
+			cout << "Esto fue un EMPATE, intentalo de nuevo!!"<<endl;
+
+			game = false;
+
+		
+
+		}
+
+		
+
+		
+
+			
+
+		
+
+		
+
+		
+
+		}
+
+	}
+
+	
+
+	
+
+}

@@ -1,0 +1,14 @@
+  //Articulo equis
+
+    int precio,descuento,iva,total,precio1,precio2;
+
+    cout<<"Cual es el precio del articulo: "; cin>>precio;
+    descuento = precio * 0.20;
+    precio1 = precio - descuento;
+    iva = precio1 * 0.16;
+    precio2 = precio1 + iva;
+    cout<<"El precio con descuento es de: $"<<precio1<<endl<<"El total con iva es de: $"<<precio2;
+
+
+}
+

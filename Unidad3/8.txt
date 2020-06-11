@@ -1,0 +1,32 @@
+//Sueldos de los trabajadores
+
+    float horas,bono,impuesto,dinero,dinero2;
+
+    cout<<"Cuantas horas trabajo? "; cin>>horas;
+    if (horas > 50){
+        dinero = horas * 100;
+        bono = dinero * 0.25;
+        dinero += bono;
+        if (dinero > 700){
+            impuesto = dinero * 0.15;
+            dinero -= impuesto;
+            cout<<"Tu pago es de: "<<"$"<<dinero<<" Pesos Mxn"<<endl;
+
+
+        }
+
+
+
+
+
+    }
+    if (horas <= 50){
+        dinero2 = horas * 100;
+        if (dinero2 > 700){
+            impuesto = dinero2 * 0.15;
+            dinero2 -= impuesto;
+            cout<<"Tu pago es de: "<<"$"<<dinero2<<" Pesos Mxn"<<endl;
+
+        }
+
+    }

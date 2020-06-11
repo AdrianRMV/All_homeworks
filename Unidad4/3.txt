@@ -1,0 +1,45 @@
+/arreglo para promedio
+    string nombres[100];
+    float promedios [100] = {0};
+    string nombreT =  "";
+    float promT = 0;
+    int alumnos = 0;
+
+    cout<<"Ingresa el numero de alumnos: "<<endl; cin>> alumnos;
+
+    for (int i = 0; i < alumnos; ++i) {
+        cout<<"Nombre de alumno: "<<1+i<<endl; cin >> nombreT;
+        cout<<"Promedio de estudiante"<<1+i<<endl; cin >> promT;
+
+
+        nombres [i] = nombreT;
+        promedios [i] = promT;
+
+
+    }
+
+    //ciclo para mostrar promedios de alumnos y nombres
+    for (int k = 0; k < alumnos; ++k) {
+        cout << nombres [k] << " - "<<promedios [k]<<endl;
+    }
+    //ciclo para ordenar promedios en metodo burbuja
+    for (int j = 0; j < alumnos; ++j) {
+        for (int i = 0; i < alumnos; ++i) {
+            if (promedios [j]>promedios[j+1]){
+                nombreT = nombres [j];
+                promT = promedios [j];
+
+                nombres [j] = nombres [j+1];
+                promedios[j] = promedios [j+1];
+
+                nombres [j+1] =nombreT;
+                promedios [j+1] = promT;
+
+            }
+        }
+    }
+
+    for (int k = 0; k < alumnos; ++k) {
+        cout << nombres [k] << " - "<<promedios [k]<<endl;
+    }
+}

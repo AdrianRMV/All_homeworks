@@ -1,0 +1,15 @@
+//alumnos
+    float alumnos,edad,vueltas = 0,acumulador;
+    cout<<"Cuantos alumnos seran: "; cin>>alumnos;
+
+    while (vueltas <= alumnos - 1){
+        cout<<"Ingrese la edad por favor: "; cin>>edad;
+        acumulador = acumulador + edad;
+        vueltas += 1;
+
+    }
+    acumulador = (acumulador / alumnos);
+    cout<<"El promedio de edad es de: "<<acumulador;
+}
+
+

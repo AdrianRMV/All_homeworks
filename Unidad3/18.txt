@@ -1,0 +1,9 @@
+//costo de la llamada
+
+    int min,costo,total;
+
+    cout<<"Cuanto duro tu llamada? "; cin>>min;
+    cout<<"Cual es el precio por min: "; cin>>costo;
+    total = costo * min;
+    cout<<"EL total de tu llamada es de: $"<<total;
+}

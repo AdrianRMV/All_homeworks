@@ -1,0 +1,28 @@
+//Menores o mayores a 0
+
+int cantidades,mayores,menores,iguales,i,canitdades2;
+
+cout<<"Cuantas cantidades desea capturar"; cin>>cantidades;
+
+while (i <= cantidades - 1 ){
+
+cout<<"Ingrese la cantidad: "; cin>>canitdades2;
+if (canitdades2 > 0){
+mayores +=1;
+
+}
+if (canitdades2 == 0){
+iguales +=1;
+
+}
+if (canitdades2 < 0){
+menores +=1;
+
+
+}
+i+=1;
+
+}
+cout<<"Mayores: "<<mayores<<endl;
+cout<<"Menores: "<<menores<<endl;
+cout<<"Iguales: "<<iguales<<endl;

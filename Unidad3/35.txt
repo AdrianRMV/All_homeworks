@@ -1,0 +1,132 @@
+//banco
+
+int tipoTarjeta, credito, nuevoLimite, aumento;
+
+
+
+cout<<"Cual es el tipo de su tarjeta? "<<endl;
+
+cout<<"1.Tipo 1 \n2.Tipo 2 \n3.Tipo 3 \n4.Otro Tipo \n";
+
+cin>>tipoTarjeta;
+
+cout<<"Ingrese por favor el credito de su tarjeta: ";
+
+cin>>credito;
+
+if(tipoTarjeta == 1){
+
+aumento = credito * 0.25;
+
+nuevoLimite = credito + aumento;
+
+}
+
+else{
+
+if(tipoTarjeta == 2){
+
+aumento = credito * 0.35;
+
+nuevoLimite = credito + aumento;
+
+}
+
+else{
+
+if(tipoTarjeta == 3){
+
+aumento = credito * 0.40;
+
+nuevoLimite = credito + aumento;
+
+}
+
+else{
+
+if(tipoTarjeta >3){
+
+aumento = credito * 0.50;
+
+nuevoLimite = credito + aumento;
+
+}
+
+}
+
+}
+
+}
+
+cout<<"El nuevo limite de su linea de credito es de: $"<<nuevoLimite;
+
+return 0;
+
+}
+
+
+
+
+
+36.-
+
+
+
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+int main(){
+
+string name, name2, name3;
+
+int age, age2, age3;
+
+cout<<"Ingrese nombre y edad de la primera persona: ";
+
+cin>>name;
+
+cin>>age;
+
+cout<<"Ingrese nombre y edad de la segunda persona: ";
+
+cin>>name2;
+
+cin>>age2;
+
+cout<<"Ingrese nombre y edad de la tercera persona: ";
+
+cin>>name3;
+
+cin>>age3;
+
+if(age<age2 and age<age3){
+
+cout<<"La persona con menor edad es: "<<name<<" y tiene "<<age<<" annios.";
+
+}
+
+else{
+
+if(age>age2 and age2<age3){
+
+cout<<"La persona con menor edad es: "<<name2<<" y tiene "<<age2<<" annios.";
+
+}
+
+else{
+
+if(age>age3 and age2>age3){
+
+cout<<"La persona con menor edad es: "<<name3<<" y tiene "<<age3<<" annios.";
+
+}
+
+}
+
+}
+

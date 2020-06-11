@@ -1,0 +1,28 @@
+//articulos en oferta
+
+    int articuloP,numeroA,x,descuento=0,total1=0;
+
+    cout<<"Ingrese el numer de articulos: "; cin>>numeroA;
+    while (x < numeroA){
+        cout<<"Precio del articulo: "; cin>>articuloP;
+        if (articuloP >= 200){
+            cout<<"Descuento del 15%"<<endl;
+            descuento = articuloP - (articuloP*0.15);
+            cout<<"Precio con descuento: "<<descuento<<endl;
+
+        }
+        if (articuloP <200 and articuloP >= 100){
+            cout<<"Descuento del 12%"<<endl;
+            descuento = articuloP - (articuloP*0.12);
+            cout<<"Precio con descuento: "<<descuento<<endl;
+        }
+        if (articuloP < 100){
+            cout<<"Descuento del 10%"<<endl;
+            descuento = articuloP - (articuloP*0.10);
+            cout<<"Precio con descuento: "<<descuento<<endl;
+        }
+        x+=1;
+        total1 += descuento;
+        cout<<"Su total a pagar es de: "<<total1;
+    }
+}

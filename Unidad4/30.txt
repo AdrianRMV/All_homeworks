@@ -1,0 +1,104 @@
+	
+int matriz1[12][12] = {0};
+int matriz2[12][12] = {0};
+bool f = false;
+
+
+
+for(int i=0; i<12; i++){
+
+    for(int j=0; j<12; j++){
+
+        matriz1[i][j] = rand() % 10 + 1;
+
+    }
+
+}
+
+
+
+for(int i=0; i<12; i++){
+
+    for(int j=0; j<12; j++){
+
+        matriz2[i][j] = rand() % 10 + 1;
+
+    }
+
+}
+
+
+//Mostrando primera matriz
+cout<<"==Matriz 1===";
+
+for(int i=0; i<12; i++){
+
+    for(int j=0; j<12; j++){
+
+        cout<<"["<<matriz1[i][j]<<"] ";
+
+    }
+
+    cout<<endl;
+
+}
+
+
+
+//Mostrar segunda matriz
+
+cout<<"===Matriz 2===";
+
+for(int i=0; i<12; i++){
+
+    for(int j=0; j<12; j++){
+
+        cout<<"["<<matriz2[i][j]<<"] ";
+
+    }
+
+    cout<<endl;
+
+}
+
+
+
+//Comprobar diagonal principal de las dos
+
+for(int i=0; i<12; i++){
+
+    for(int j=0; j<12; j++){
+
+        if(i==j){
+
+            if(matriz1[i][j] == matriz2[i][j]){
+
+                f =  true;
+
+            }
+
+            else{
+
+                f = false;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+if(f == true){
+
+    cout<<" Las diagonales son iguales.";
+
+}
+
+else{
+
+    cout<<" Las diagonales son distintas.";
+
+}

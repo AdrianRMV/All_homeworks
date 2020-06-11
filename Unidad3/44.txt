@@ -1,0 +1,30 @@
+ //Dinero ganado
+
+    float dinero;
+
+    cout<<"Ingrese la cantidad de dinero que tendrá? "; cin>>dinero;
+
+    if (dinero >= 50000){
+        cout<<"PAQUETE A"<<endl;
+        cout<<"Usted tendra una tv,un modular, tres pares de zapatos, cinco camisas y cinco pantalones!!";
+
+    }
+    if (dinero <50000 or dinero >= 20000){
+        cout<<"PAQUETE B"<<endl;
+
+        cout<<"Usted tendra una grabadora,tres pares dezapatos,cinco camisas y cinco pantalones";
+
+    }
+    if (dinero < 20000 or dinero >= 10000){
+        cout<<"PAQUETE C"<<endl;
+
+        cout<<"Usted tendra dos pares de zapatos, tres camisas y tres pantalones!";
+
+    }
+    if (dinero < 10000){
+        cout<<"PAQUETE D"<<endl;
+
+        cout<<"Ni modo le tocaron unos zapatos,dos camisas y dos pantalones ";
+
+    }
+}

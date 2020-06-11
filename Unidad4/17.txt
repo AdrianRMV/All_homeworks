@@ -1,0 +1,33 @@
+	
+int matriz [4][4];
+    int azar;
+    srand (time(NULL));
+    int ceros=0;
+
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            matriz[i][j]=rand()%10;
+        }
+        cout<<endl;
+    }
+
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            cout<<"[ "<<matriz[i][j]<<" ]";
+        }
+        cout<<endl;
+    }
+
+
+
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            if (matriz[i][j]==0){
+                ceros+=1;
+            }
+        }
+    }
+    cout<<"Numero de ceros es de: "<<ceros;
+
+
+}

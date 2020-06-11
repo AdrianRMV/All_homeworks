@@ -1,0 +1,69 @@
+int numCita, costoCita, costoTratamiento;
+
+cout<<"Cual es el numero de su cita? ";
+
+cin>>numCita;
+
+if(numCita<=3){
+
+costoCita = (numCita * 200)/numCita;
+
+costoTratamiento = (numCita * 200);
+
+cout<<"El costo de su cita es de: $"<<costoCita<<endl;
+
+cout<<"El costo de su tratamiento es de $"<<costoTratamiento;
+
+}
+
+else{
+
+if(numCita>3 and numCita<=5){
+
+costoCita = (numCita * 150)/numCita;
+
+costoTratamiento = ((numCita - 3) * 150) + 600;
+
+cout<<"El costo de su cita es de: $"<<costoCita<<endl;
+
+cout<<"El costo de su tratamiento es de $"<<costoTratamiento;
+
+}
+
+else{
+
+if(numCita>5 and numCita<=8){
+
+costoCita = (numCita * 100)/numCita;
+
+costoTratamiento = ((numCita - 5) * 100) + 900;
+
+cout<<"El costo de su cita es de: $"<<costoCita<<endl;
+
+cout<<"El costo de su tratamiento es de $"<<costoTratamiento;
+
+}
+
+else{
+
+if(numCita>8){
+
+costoCita = (numCita * 50)/numCita;
+
+costoTratamiento = ((numCita - 8) * 50) + 1200;
+
+cout<<"El costo de su cita es de: $"<<costoCita<<endl;
+
+cout<<"El costo de su tratamiento es de $"<<costoTratamiento;
+
+}
+
+}
+
+}
+
+}
+
+return 0;
+
+}

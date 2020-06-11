@@ -1,0 +1,93 @@
+//becas AMLOVER
+
+int edad;
+
+float promedio;
+
+cout<<"Ingrese la edad del estudiante: ";
+
+cin>>edad;
+
+if(edad<=18){
+
+cout<<"Ingrese el promedio del estudiante: ";
+
+cin>>promedio;
+
+if(promedio<6){
+
+cout<<"Se te invita a estudiar mas en el proximo ciclo escolar, para obtener una beca.";
+
+}
+
+else{
+
+if(promedio>=6 and promedio<8){
+
+cout<<"El monto de la beca es de $1000";
+
+}
+
+else if(promedio>=8 and promedio<9){
+
+cout<<"El monto de la beca es de $2000";
+
+}
+
+else{
+
+if(promedio>=9){
+
+cout<<"El monto de la beca es de $3000";
+
+}
+
+}
+
+}
+
+}
+
+else{
+
+if(edad>18){
+
+cout<<"Ingrese el promedio del estudiante: ";
+
+cin>>promedio;
+
+if(promedio<6){
+
+cout<<"Se te invita a estudiar mas en el proximo ciclo escolar, para obtener una beca.";
+
+}
+
+else{
+
+if(promedio>=6 and promedio<7.5){
+
+cout<<"El monto de la beca es de $500";
+
+}
+
+else if(promedio>=7.5 and promedio<9){
+
+cout<<"El monto de la beca es de $1000";
+
+}
+
+else{
+
+if(promedio>=9){
+
+cout<<"El monto de la beca es de $2000";
+
+}
+
+}
+
+}
+
+}
+
+}

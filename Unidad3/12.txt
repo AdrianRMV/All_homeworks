@@ -1,0 +1,51 @@
+ //Entrevista solicitud de trabajo.
+
+    int acumulador = 0, menor = 0, mayor= 0;
+    int temporal = 0;
+
+    int cantidad = 0;
+
+    cout<<"Ingrese la cantidad de trabajadores: "; cin>>cantidad;
+
+    for (int i=0; i<cantidad; i++){
+        cout<<"Ingrese el año de su nacimiento: ";
+        cin>>temporal;
+        acumulador += temporal;
+
+        if (i == 0){
+            menor =  temporal;
+            mayor = temporal;
+        }
+
+        else{
+            if (temporal > mayor){
+                mayor = temporal;
+
+            }
+            if (temporal < menor){
+                menor = temporal;
+            }
+        }
+
+
+
+
+
+    }
+
+
+    float promedio = acumulador / cantidad;
+
+    cout<<"El promedio es de: "<<promedio<<endl;
+    cout<<"El año menor fue de: "<<menor<<endl;
+    cout<<"El año mayor fue de: "<<mayor<<endl;
+
+
+
+
+
+
+
+
+
+}

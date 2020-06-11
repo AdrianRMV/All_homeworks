@@ -1,0 +1,35 @@
+//CADENAS INVERTIDAS
+
+char palabra1[100];
+char palabra2[100];
+char palabra3[100];
+char palabra4[100];
+
+
+//palabra 1 = Cafe = 4
+//palabra 2 = leche = 5
+cout<<"Ingrese su palabra1 : "; cin>>palabra1;
+cout<<"Ingrese su palabra2 : "; cin>>palabra2;
+int tamaño1 = strlen(palabra1);
+int tamaño2 = strlen(palabra2);
+
+for (int j = 0, y=tamaño1-1; j < tamaño1; ++j,--y) {
+    palabra3[j]=palabra1[y];
+}
+cout<<endl;
+
+for (int j = 0, y=tamaño2-1; j < tamaño1; ++j,--y) {
+    palabra4[j]=palabra2[y];
+}
+cout<<endl;
+
+
+cout<<"Palabra 1: "<<palabra1<<endl;
+cout<<"Palabra 2: "<<palabra2<<endl;
+cout<<"Palabra invertida 1: "<<palabra3<<endl;
+cout<<"Palabra invertida 2: "<<palabra4<<endl;
+
+
+
+
+

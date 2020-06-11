@@ -1,0 +1,42 @@
+//CostoConsumo
+
+    double consumo,cBase,temp,desc,aumento;
+
+    cout<<"Cuanto fue tu consumo de KW: "; cin>> consumo;
+    cout<<"Por favor ingrese la temporada donde se encuentra:"<<endl<<
+          "1-> Primavera: 1 marzo hasta 31 mayo "<<endl<<
+          "2-> Verano: 1 junio hasta 31 agosto"<<endl<<
+          "3-> Otoño: 1 septiembre hasta 30 noviembre"<<endl<<
+          "4-> Invierno: 1 diciembre hasta 28 febrero "; cin>>temp;
+
+    if (consumo <= 75){
+        cBase = consumo * 0.793;
+        cout<<"El costo base es de: $"<<cBase;
+    }
+    if (consumo > 75 and consumo <= 140){
+        consumo = consumo - 75;
+        cBase = (consumo * 0.956) + (75 * 0.793);
+        cout<<" El costo base es de: $"<<cBase;
+
+    }
+    if (consumo > 140){
+        consumo = consumo - 140;
+        cBase =  (consumo * 2.802) + (75 * 0.793) + (65 * 0.956);
+        cout<<" El costo base es de: $"<<cBase;
+
+    }
+    if (temp == 1 or temp == 3){
+        cout<<" No hay aumento por la temporada"<<endl;
+        desc = cBase - (cBase * 0.60);
+        cout<<" El costo con el apoyo del subsidio es de: $"<<desc;
+
+    }
+    if (temp == 2 or temp == 4){
+        aumento = cBase + (cBase * 0.25);
+        cout<<" El costo con el aumento de temporada es de: $"<<aumento;
+
+        desc = aumento - (aumento * 0.60);
+        cout<<" El costo con el apoyo del subisidio es de: $"<<desc;
+    }
+
+}

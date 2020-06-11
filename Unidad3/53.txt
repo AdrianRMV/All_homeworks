@@ -1,0 +1,14 @@
+//Estatura
+
+    float estatura,opcion,acumulador,conteo = 0;
+
+    do{
+        cout<<"Ingrese la altura de la persona: " ; cin>> estatura;
+        cout<<"Desea continuar?  1) Yes   2) Yes`nt "; cin>>opcion;
+        acumulador = acumulador + estatura;
+        conteo += 1;
+
+    } while (opcion == 1);
+    acumulador = acumulador / conteo;
+    cout<<"El promedio es de: "<<acumulador;
+}

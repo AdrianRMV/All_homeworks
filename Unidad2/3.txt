@@ -1,0 +1,11 @@
+	
+//Area de un triangulo.
+
+float b,h,resultado = 0;
+
+cout<<"Dijite la base de su triangulo: "; cin>>b;
+cout<<"Dijite la altura de su traingulo: "; cin >>h;
+
+resultado = (b*h)/2;
+
+cout<<"El area de tu triangulo es: "<<resultado<<endl;

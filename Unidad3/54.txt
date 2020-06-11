@@ -1,0 +1,16 @@
+ //Ahorro
+
+    float cantidadA,conteo,ahorro = 0,i,meses = 12,acumulador;
+
+    while (i <= meses){
+        cout<<"Cantidad de ahorra del mes: "; cin>>cantidadA;
+        ahorro = ahorro + cantidadA;
+        cout<<"El ahorro actual es de: "<<ahorro<<endl;
+        acumulador = acumulador + cantidadA;
+        i +=1;
+        conteo += 1;
+
+    }
+    acumulador = acumulador / conteo;
+    cout<<"El ahorro acutal es de: "<<acumulador;
+}

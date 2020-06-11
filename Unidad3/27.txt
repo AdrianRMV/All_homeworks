@@ -1,0 +1,107 @@
+//hotel
+
+    int dias,costo,llegada,total,total1,diasD;
+
+    cout<<"Cuantos dias se hospedara? "; cin>>dias;
+    cout<<"Ingrese el dia de llegada: "
+          "1.- Lunes"<<endl<<
+          "2.- Martes"<<endl<<
+          "3.- Miercoles"<<endl<<
+          "4.- Jueves"<<endl<<
+          "5.- Viernes"<<endl<<
+          "6.- Sabado"<<endl<<
+          "7.- Domingo"<<endl; cin>>llegada;
+    cout<<"Ingrese el costo de la noche: "; cin>>costo;
+
+    if (llegada == 2 and dias == 5){
+        total = dias * costo;
+        diasD = dias - 4;
+        diasD = costo * 0.30;
+        total += diasD;
+        cout<<"El costo total es de: "<<total<<endl;
+
+    }
+    if (llegada == 3 and dias >= 4){
+        if (dias == 5){
+            total = dias * costo;
+            diasD = dias - 4;
+            diasD = costo * 0.30;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+        if (dias == 4){
+            total = dias * costo;
+            diasD = dias - 3;
+            diasD = costo * 0.30;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+    }
+    if (llegada == 4 and dias >=3){
+        if (dias == 3){
+            total = dias * costo;
+            diasD = dias - 1;
+            diasD = costo * 0.30;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+        if (dias == 5){
+            total = dias * costo;
+            diasD = dias - 2;
+            diasD = (costo * 0.30)*2;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+        if (dias == 4){
+            total = dias * costo;
+            diasD = dias - 2;
+            diasD = (costo * 0.30)*2;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+    }
+    if (llegada == 5 and dias >1){
+        if (dias == 2){
+            total = dias * costo;
+            diasD = dias - 1;
+            diasD = (costo * 0.30);
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+        }
+        if (dias == 3){
+            total = dias * costo;
+            diasD = dias - 1;
+            diasD = (costo * 0.30)*2;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+    }
+    if (llegada == 6 and dias >=1){
+        if (dias == 1){
+            total = dias * costo;
+            diasD = (costo * 0.30);
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+        }
+        if (dias == 2){
+            total = dias * costo;
+            diasD = dias - 1;
+            diasD = (costo * 0.30)*2;
+            total += diasD;
+            cout<<"El costo total es de: "<<total<<endl;
+
+        }
+
+    }
+
+    }
+    else {
+        total = dias * costo;
+        cout<<"El costo total es de: "<<total<<endl;
+    }
+}

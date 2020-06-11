@@ -1,0 +1,109 @@
+	
+int suma (int x, int y)
+{
+    int suma= 0;
+
+    suma = x + y;
+
+    return suma;
+
+}
+
+
+int resta (int x, int y)
+int rect (int x, int y)
+{
+    int area= 0;
+
+    area = x * y;
+
+    return area;
+
+}
+
+
+int cua (int x)
+{
+    int area= 0;
+
+    area = x * x;
+
+    return area;
+
+
+}
+
+int tri (int x, int y)
+{
+    int area= 0;
+
+    area = (x * y)/2;
+
+    return area;
+
+
+}
+
+int cir (int x)
+{
+
+    int p = 3.1416;
+    int area= 0;
+
+    area = p*(x*x);
+
+    return area;
+
+}
+
+int main(){
+
+    int variable1 = 0;
+    int variable2 = 0;
+    int operacion;
+    cout << "Que area desea sacar: ";
+    cout << " 1.- Rectangulo  2.- Cuadrado  3.- Triangulo  4.- Circulo: ";
+    cin >> operacion;
+
+    if (operacion == 1){
+
+        cout<<"Usted eligio la opcion de : Rectangulo "<<endl;
+        cout<<"Ingrese su Base por favor: "; cin>>variable1;
+        cout<<"Ingrese su Altura por favor: "; cin>>variable2;
+        int res = rect (variable1 , variable2);
+        cout << "El resultado de su area es: "<<res<<endl;
+
+    }
+
+    if (operacion == 2){
+
+        cout<<"Usted eligio la opcion de : Cuadrado "<<endl;
+        cout<<"Ingrese uno de los lados por favor: "; cin>>variable1;
+        int res = cua (variable1);
+        cout << "El resultado de su area es: "<<res<<endl;
+
+    }
+
+    if (operacion == 3){
+
+        cout<<"Usted eligio la opcion de : Triangulo "<<endl;
+        cout<<"Ingrese su Base por favor: "; cin>>variable1;
+        cout<<"Ingrese su Altura por favor: "; cin>>variable2;
+        int res = tri (variable1 , variable2);
+        cout << "El resultado de su area es: "<<res<<endl;
+
+    }
+
+    if (operacion == 4){
+
+        cout<<"Usted eligio la opcion de : Circulo "<<endl;
+        cout<<"Ingrese su radio por favor: "; cin>>variable1;
+
+        int res = cir (variable1);
+        cout << "El resultado de su area es: "<<res<<endl;
+
+    }
+
+
+    return 0;
+}

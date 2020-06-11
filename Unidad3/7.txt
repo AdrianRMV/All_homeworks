@@ -1,0 +1,17 @@
+//Distancia del triangulo
+float x1,x2,x3,y1,y2,y3,d;
+
+cout<<"Ingrese x1 por favor: "; cin>>x1;
+cout<<"Ingrese x2 por favor: "; cin>>x2;
+cout<<"Ingrese y1 por favor: "; cin>>y1;
+cout<<"Ingrese y2 por favor: "; cin>>y2;
+
+//Hacemos la resta para tener el punto exacto de X
+x3 = x2-x1;
+//Hacemos la resta para tener el punto exacto de Y
+
+y3= y2-y1;
+
+//Para tener la distancia hacemos la formula siguiente:
+d = sqrt((x3*x3)+(y3*y3));
+cout<<"La distancia del triangulo es: "<<d<<endl;

@@ -1,0 +1,11 @@
+ //ahorro en un año
+
+    double ahorroI=0.03,año=365,x;
+
+    while (x < año){
+        ahorroI = (ahorroI * 3)+ahorroI;
+        cout<<ahorroI<<endl;
+        x+=1;
+    }
+
+}

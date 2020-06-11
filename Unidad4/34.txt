@@ -1,0 +1,40 @@
+
+int arreglo1[10]={0};
+int arreglo2[10]={0};
+int arreglo3[10]={0};
+srand(time(NULL));
+
+//Rellenando el primer arreglo
+for (int i = 0; i < 10; ++i) {
+    arreglo1[i]=rand()%10+1;
+}
+
+//Mostrando primer arreglo
+for (int i = 0; i < 10; ++i) {
+    cout<<"[ "<<arreglo1[i]<<" ]";
+}
+cout<<endl;
+
+//Rellenando el segundo arreglo
+for (int i = 0; i < 10; ++i) {
+    arreglo2[i]=rand()%10+1;
+}
+
+//Mostrando el segundo arreglo
+for (int i = 0; i < 10; ++i) {
+    cout<<"[ "<<arreglo2[i]<<" ]";
+    cout<<endl;
+}
+cout<<endl;
+
+//Registrando la multiplicacion en el tercer arreglo
+for (int i = 0; i < 10; ++i) {
+    arreglo3[i]=(arreglo1[i]*arreglo2[i]);
+}
+
+//Mostrando el tercer arreglo.
+for (int i = 0; i < 10; ++i) {
+    cout<<"[ "<<arreglo3[i]<<" ]";
+
+}
+

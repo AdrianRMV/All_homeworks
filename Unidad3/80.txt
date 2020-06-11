@@ -1,0 +1,21 @@
+//banco morosos
+    //minimo 15% del total pago para evitar intereses 85%
+
+    int clientes,x=0,saldoA,pagoM=0,pagoE=0,ultimoP=0,ganacias=0,morosos=0,clientes2;
+
+    cout<<"Cuantos clientes quiere checar? "; cin>>clientes2;
+    while (x < clientes2){
+        cout<<"Cual es su saldo acutal: "; cin>>saldoA;
+        pagoM= saldoA*0.15;
+        pagoE= saldoA*0.85;
+        cout<<"Cual fue su ulitmo pago?"; cin>>ultimoP;
+        if (ultimoP < pagoE){
+            ganacias = ganacias + (pagoE-ultimoP);
+            morosos +=1;
+        }
+        x+=1;
+
+    }
+    cout<<"Sus ganancias fueron de:"<<ganacias<<endl;
+    cout<<"Sus clientes morosos fueron de: "<<morosos<<endl;
+}

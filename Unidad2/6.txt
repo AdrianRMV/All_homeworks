@@ -1,0 +1,10 @@
+//Calcular IVA
+
+float precio,iva = 0.16,resultado1 = 0, resultado2 = 0;
+
+cout<<"dijite el precio de su articulo: "; cin>>precio;
+
+resultado1 = precio * iva;
+resultado2= precio+resultado1;
+
+cout<<"Su precio total es: "<<resultado2<<endl;

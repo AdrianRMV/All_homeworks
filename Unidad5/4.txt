@@ -1,0 +1,74 @@
+#include <iostream>
+#include <string.h>
+#include <string>
+using namespace std;
+string palabra;
+string palabra_original = "azul";
+int vidas =5;
+
+
+void mostrar(){
+    cout << "Vidas: "<< vidas<<endl;
+    cout << palabra<<endl;
+}
+void inicio () {
+
+
+
+    for (int i = 0; i < palabra_original.length(); ++i) {
+        if (palabra_original[i] >= 'A' and palabra_original[i] <= 'Z') {
+            palabra += 32;
+
+        }
+    }
+    for (int i = 0; i < palabra_original.length(); ++i) {
+        if (palabra_original[i] >= 'a' and palabra_original[i] <= 'z') {
+            palabra += '-';
+
+        }
+        else{
+            palabra+=palabra_original[i];
+        }
+    }
+
+
+}
+void letra(char l){
+    bool nolife=true;
+
+    for (int i = 0; i < palabra_original.length(); ++i) {
+        if (l == palabra_original[i]){
+            nolife = false;
+            palabra[i]=l;
+        }
+    }
+    if (nolife == true){
+        vidas-=1;
+    }
+
+}
+
+
+
+int main() {
+    inicio();
+    mostrar();
+    while ( vidas > 0 and palabra != palabra_original){
+        char l;
+        cin >> l;
+        letra(l);
+        mostrar();
+    }
+
+    if (vidas > 0){
+        cout << "=== GANASTE ===";
+        cout << endl;
+    }
+    else{
+        cout << "Perdiste >:(";
+    }
+
+    return 0;
+
+}
+

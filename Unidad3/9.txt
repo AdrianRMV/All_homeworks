@@ -1,5 +1,0 @@
-float pulgadas=0.0254, metro;
-
-cout<<"Cuantos metros  de tela tenia pensado pedir? "; cin>>metro;
-metro = metro * pulgadas;
-cout<<"Deberá de pedir:  "<<metro<<" Pulgadas de tela";

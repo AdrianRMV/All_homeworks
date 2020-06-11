@@ -1,9 +1,0 @@
-//Area de un circulo.
-
-float r,area;
-
-double pi = 3.1416;
-
-cout<<"Dijite el radio de su circunferencia: "; cin>>r;
-area = pi*(r*r);
-cout<<"El area de su circulo es: "<< area <<"cm"<<endl;

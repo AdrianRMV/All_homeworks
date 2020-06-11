@@ -1,7 +1,0 @@
-//area de un cuadrado.
-
-float l, resultado = 0;
-
-cout<<"Dijite un lado de su cuadrado: "; cin >> l;
-resultado = (l*l);
-cout<<"El area de su cuadrado es de: "<<resultado<< endl;
